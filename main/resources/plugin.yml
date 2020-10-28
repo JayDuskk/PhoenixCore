@@ -1,0 +1,21 @@
+name: PhoenixCore
+version: ${project.version}
+main: me.jj9playz.phoenixcore.main
+api-version: 1.16
+authors: [ JJ9_Playz ]
+description: A Core Plugin that allows users to use the other Phoenix Plugins
+
+commands:
+  phoenix:
+    description: Lists all comands
+    usage: /<command>
+  pc:
+    description: Main command for Phoenix Core
+    usage: /<command> [function]
+  pcp:
+    description: Phoenix Core Perms, allows addition and removal of perms.
+    usage: /<command> [player/group] [set/unset] [playername] [permission]
+permissions:
+  pc.chat.color:
+    description: Players with this permission can use colors in their message
+    default: op

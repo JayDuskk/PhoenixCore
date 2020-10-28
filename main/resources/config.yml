@@ -1,0 +1,48 @@
+# Thank you for downloading Phoenix Core
+# Phoenix Core is a highly customizable plugin,
+# that allows for many custom features in your server.
+#
+#
+# This Version of the plugin is completely free
+# So Please consider donating.
+#
+#
+# PlaceHolders:
+# %player% : Replaces with the players name
+# %nl% : Creates a New Line
+# %msg% : Replaces with the message sent by player
+# All of the string options have color codes enabled. use & to access colors
+# if this is enabled a message will be sent on player join
+#
+prefix: "&6&lPhoenix Core : &r"
+#
+core-messages: true
+#
+# Enable for custom join message
+core-join-custom: true
+# Message if the above is set to true
+join-message: "%player% has been reborn" #%nl% is not enabled here
+#
+# Enable for custom leave message
+core-quit-custom: true
+# Message if above is set to true
+quit-message: "%player% has left" #%nl% is not enabled here
+#
+# Enable for custom chat format
+core-chat-custom: true
+# If this is enabled and I join your server my chat will be formated to \"&6&lPhoenix Core Dec&r %player% >> %msg%
+dev-chat-format: true
+# Default Format if above is set to true and user does not have permission for any of the below
+chat-format: "&7%player% >> %msg%"
+#
+chat-format-amount: "1"
+# Custom Chat Formats
+chat-formats:
+  op:
+    format: "&7[&cOP&7]&r %player% >> &r%msg%"
+    permission:
+      name: "pc.chat.format.op"
+      description: "Users with this use the \"op\" chat format"
+      default: "op" #Case sensitive options op(Anyone who is op get it)/not op(Anyone who isnt op gets it)/TRUE(everyone gets it)/FALSE(no one gets it unless you give it to them)
+
+
